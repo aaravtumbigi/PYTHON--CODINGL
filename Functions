@@ -1,0 +1,39 @@
+def intro(name):
+    print("Hi, how are you doing? My name is ", name)
+
+name = input("Enter your name? ")
+intro(name)
+
+
+def factorial(n):
+    if n == 1 or n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+num = int(input("Enter a number: "))
+print("The factorial of", num, "is", factorial(num))
+
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    if b == 0:
+        return "Error: Division by zero not allowed"
+    return a / b
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+
+print("Sum:", add(num1, num2))
+print("Subtraction:", subtract(num1, num2))
+print("Multiplication:", multiply(num1, num2))
+print("Division:", divide(num1, num2))
+
+
